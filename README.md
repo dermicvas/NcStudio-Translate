@@ -5,15 +5,16 @@
 <h1 align="center">NcStudio Translate</h1>
 
 <p align="center">
-  <strong>Editor de traduções para arquivos .resx do software NcStudio Phoenix</strong>
+  <strong>Um editor simples para traduzir a interface do NcStudio Phoenix</strong>
 </p>
 
 <p align="center">
   <a href="#-sobre">Sobre</a> •
-  <a href="#-funcionalidades">Funcionalidades</a> •
+  <a href="#-começando-rápido">Começando rápido</a> •
   <a href="#-screenshots">Screenshots</a> •
+  <a href="#-requisitos">Requisitos</a> •
   <a href="#-instalação">Instalação</a> •
-  <a href="#-como-usar">Como Usar</a> •
+  <a href="#-como-usar">Como usar</a> •
   <a href="#-modelo-pré-traduzido">Modelo pré-traduzido</a> •
   <a href="#-contribuindo">Contribuindo</a> •
   <a href="#-licença">Licença</a>
@@ -23,9 +24,15 @@
 
 ## 📋 Sobre
 
-**NcStudio Translate** é uma ferramenta open source desenvolvida em C# WinForms (.NET 10) para facilitar a tradução dos arquivos de recursos (.resx) do software CNC **NcStudio Phoenix**. 
+O **NcStudio Translate** é um programa para Windows que ajuda você a **traduzir os textos da interface** do **NcStudio Phoenix**.
 
-O software permite traduzir a interface do NcStudio Phoenix de chinês (zh-CN) para qualquer idioma, utilizando os arquivos em inglês (en-US) como referência.
+Em termos simples:
+
+- O NcStudio Phoenix guarda os textos da interface em arquivos chamados **`.resx`** (arquivos de “recursos”).
+- Muitas instalações vêm com textos em **chinês** (por exemplo `zh-CN`).
+- Esta ferramenta cria uma “base em inglês” a partir do arquivo original e deixa você **editar as traduções** com mais conforto (tabela, busca, histórico e backup).
+
+> Se você nunca mexeu com `.resx`, não tem problema: na prática você só vai **selecionar a pasta**, escolher o arquivo e **editar a coluna de tradução**.
 
 ### Compatibilidade
 
@@ -37,36 +44,50 @@ O software permite traduzir a interface do NcStudio Phoenix de chinês (zh-CN) p
 >
 > ⚠️ **IMPORTANTE:** Antes de testar em outras versões, **faça um BACKUP COMPLETO** da pasta de instalação do NcStudio (geralmente `C:\Program Files\Weihong\NcStudio`).
 
+### Para quem é?
+
+- Operadores de CNC, técnicos e usuários que querem **usar o NcStudio Phoenix em outro idioma**.
+- Pessoas que preferem **editar traduções com uma interface gráfica**, em vez de abrir arquivos na mão.
+
 ### Por que este projeto existe?
 
-O NcStudio Phoenix é um software de controle CNC amplamente utilizado, mas sua interface em chinês pode ser uma barreira para operadores que não dominam o idioma. Este projeto nasceu da necessidade de traduzir a interface para português brasileiro, mas pode ser adaptado para qualquer idioma.
+O NcStudio Phoenix é muito usado no CNC, mas uma interface em chinês pode atrapalhar no dia a dia. Este projeto surgiu para facilitar uma tradução para **pt-BR**, mas você pode adaptar para outros idiomas.
 
 ### ⚠️ Aviso de Responsabilidade
 
 > **IMPORTANTE:** O uso desta ferramenta é de **total responsabilidade do usuário**. Os desenvolvedores não se responsabilizam por quaisquer danos, perdas de dados, mau funcionamento do NcStudio Phoenix ou problemas decorrentes do uso deste software. Sempre faça backup dos arquivos originais antes de qualquer modificação. Use por sua conta e risco.
 
-## ✨ Funcionalidades
+## ⚡ Começando rápido
 
-- 📂 **Navegação intuitiva** - Selecione uma pasta e visualize todos os arquivos .resx disponíveis
-- 🔍 **Filtro avançado** - Busca com suporte a wildcards (`*` e `?`) para encontrar textos rapidamente
-- 📝 **Edição inline** - Edite traduções diretamente no grid
-- 🔄 **Sistema de backup** - Cria backup automático do arquivo original (.original) antes de qualquer alteração
-- 📊 **Log de alterações** - Registra todas as modificações com timestamp, valores anteriores e novos
-- 🔗 **Integração com IA** - Botão para abrir tradução no ChatGPT, Gemini ou DeepSeek
-- 🔎 **Zoom ajustável** - Interface com zoom de 70% a 200% para melhor visualização
-- 💾 **Persistência de configurações** - Salva preferências do usuário automaticamente
-- 🎨 **Interface moderna** - Design limpo e profissional com caixas de diálogo personalizadas
+Se você quer só “rodar e traduzir”, o caminho mais simples é:
+
+1. Baixe o `.zip` na página de [Releases](../../releases)
+2. Extraia em uma pasta (ex.: `C:\NcStudioTranslate\`)
+3. Abra o `NcStudioTranslate.exe`, selecione a pasta de `Resources` do NcStudio e comece a traduzir
+
+> Dica: antes da primeira alteração, faça backup da pasta do NcStudio (principalmente a pasta `Resources`).
 
 ## 📸 Screenshots
 
-*Em breve*
+Tela principal:
 
-## 💻 Requisitos do Sistema
+![Tela principal do NcStudio Translate](docs/Printscreen_01.png)
 
-- **Sistema Operacional:** Windows 10/11
-- **Runtime:** .NET 10.0 ou superior
-- **Memória RAM:** 512 MB (mínimo)
-- **Espaço em disco:** 50 MB
+## ✨ O que o programa faz
+
+- Mostra os arquivos `.resx` da pasta escolhida (lista à esquerda)
+- Abre o conteúdo em uma tabela para você editar as traduções
+- Faz **backup automático** antes de alterar o arquivo original
+- Mantém um **log/histórico** das alterações
+- Tem busca/filtro para achar textos mais rápido
+- Oferece botões para abrir tradutores/IA (ChatGPT, Gemini, DeepSeek)
+
+## 💻 Requisitos
+
+- **Windows:** 10 ou 11
+- **.NET:** 10.0 ou superior
+- **RAM:** 512 MB (mínimo)
+- **Disco:** 50 MB
 
 ## 📥 Instalação
 
@@ -95,35 +116,47 @@ dotnet run
 
 ## 📖 Como Usar
 
-### Fluxo de Trabalho Básico
+### 1) Escolher a pasta certa
 
-1. **Selecionar pasta** - Clique em "Selecionar pasta" e escolha o diretório que contém os arquivos `.resx` do NcStudio
+Clique em **Selecionar pasta** e escolha a pasta onde ficam os arquivos de idioma do NcStudio.
 
-2. **Escolher arquivo** - Na lista à esquerda, selecione o arquivo que deseja traduzir
+Na maioria dos casos, essa pasta fica parecida com:
 
-3. **Criar tradução** - Clique no botão "Criar tradução" para:
-   - Criar um backup do arquivo chinês original (`.zh-CN.resx.original`)
-   - Substituir o conteúdo chinês pelo inglês para facilitar a tradução
-   - Habilitar a edição do arquivo
+- `C:\Program Files\Weihong\NcStudio\Bin\Resources`
 
-4. **Traduzir** - Edite as células na coluna "Atual" com suas traduções
-   - Use o filtro para encontrar textos específicos
-   - Clique com botão direito para opções de tradução automática via IA
+> Se você não encontrar, procure dentro da instalação do NcStudio por uma pasta chamada `Resources`.
 
-5. **Salvar** - As alterações são salvas automaticamente ao sair da célula editada
+### 2) Escolher o arquivo
 
-### Dicas
+Depois de selecionar a pasta, você verá uma lista de arquivos `.resx` na lateral esquerda.
 
-- Use `*` para buscar qualquer sequência de caracteres (ex: `*error*`)
-- Use `?` para buscar um único caractere (ex: `file?.txt`)
-- O log de alterações permite reverter traduções anteriores
-- Aumente o zoom para melhor visualização de textos longos
+- Clique no arquivo que você quer traduzir.
 
-### Excluir Tradução
+### 3) Criar a base para tradução
 
-Se precisar recomeçar, clique em "Excluir tradução" para:
-- Restaurar o arquivo chinês original
-- Remover o backup
+Clique em **Criar tradução**. Esse botão é importante porque ele:
+
+- Cria um backup do arquivo original (com extensão `.original`)
+- Troca o conteúdo chinês por uma referência em inglês (para facilitar a tradução)
+- Libera a edição na tabela
+
+### 4) Traduzir na tabela
+
+Agora é só editar os textos na coluna de tradução (geralmente “Atual”).
+
+- Use o filtro/busca para achar palavras (suporta `*` e `?`)
+- Se quiser, use as opções de IA/Tradutor para ajudar (e depois revise o texto)
+
+### 5) Salvar
+
+O programa salva automaticamente ao terminar a edição (quando você sai da célula editada).
+
+### Se der algo errado (voltar atrás)
+
+Se precisar recomeçar, use **Excluir tradução** para:
+
+- Restaurar o arquivo original
+- Remover o backup criado
 - Voltar ao modo somente leitura
 
 ## 🧩 Modelo pré-traduzido
@@ -137,7 +170,7 @@ A ideia é simples:
 - Quem não quiser traduzir agora pode **copiar e usar** esse arquivo como base.
 - Quem quiser ajudar pode **melhorar a tradução aos poucos** e enviar PRs, mantendo o arquivo evoluindo com a comunidade.
 
-### Como usar (modo “quero só instalar”)
+### Como usar (modo “quero só traduzir”)
 
 1. Faça backup do arquivo original do NcStudio (exemplo):
   - `C:\Program Files\Weihong\NcStudio\Bin\Resources\StringResources.zh-CN.resx`
