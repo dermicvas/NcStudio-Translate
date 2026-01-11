@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>src\Resources\ico.ico</ApplicationIcon>
+    <RootNamespace>NcStudioTranslate</RootNamespace>
+    <AssemblyName>NcStudio Translate</AssemblyName>
+    <Version>1.0.0</Version>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
+    <InformationalVersion>1.0.0</InformationalVersion>
+    <Authors>NcStudio Translate Contributors</Authors>
+    <Company>Open Source Community</Company>
+    <Product>NcStudio Translate</Product>
+    <Description>Editor de traduções para arquivos .resx do software NcStudio Phoenix</Description>
+    <Copyright>Copyright © 2026 NcStudio Translate Contributors</Copyright>
+    <RepositoryUrl>https://github.com/dermicvas/NcStudio-Translate</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <!-- Recursos da aplicação (copiados para raiz do output) -->
+  <ItemGroup>
+    <Content Include="src\Resources\ico.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <Link>ico.ico</Link>
+    </Content>
+    <Content Include="src\Resources\logo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <Link>logo.png</Link>
+    </Content>
+    <Content Include="src\Resources\error.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <Link>error.png</Link>
+    </Content>
+    <Content Include="src\Resources\alert.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <Link>alert.png</Link>
+    </Content>
+    <Content Include="src\Resources\confirmation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <Link>confirmation.png</Link>
+    </Content>
+    <Content Include="src\Resources\exclude.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <Link>exclude.png</Link>
+    </Content>
+  </ItemGroup>
+
+  <!-- Arquivos incluídos no pacote -->
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+    <None Include="LICENSE" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>

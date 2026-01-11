@@ -1,0 +1,45 @@
+NcStudio Translate - Licença de Uso Privado (NCT-PUL) v1.0
+
+Copyright (c) 2026 NcStudio Translate Contributors
+
+AVISO: Esta licença NÃO é uma licença open source.
+
+Ao baixar, instalar, copiar, acessar ou utilizar este software (incluindo o código-fonte,
+binários, documentação e demais arquivos do repositório), você concorda com os termos abaixo.
+
+1) Permissão concedida (uso privativo)
+É concedida a você uma licença limitada, revogável, não exclusiva e intransferível para:
+- Usar o software apenas para fins PRIVADOS e NÃO COMERCIAIS.
+
+2) Restrições
+Exceto quando expressamente permitido nesta licença, você NÃO pode:
+- Usar o software para fins comerciais, profissionais ou em atividades com finalidade lucrativa;
+- Modificar, adaptar, traduzir, criar obras derivadas, fazer engenharia reversa ou alterar o software;
+- Redistribuir, sublicenciar, vender, alugar, emprestar, publicar ou disponibilizar o software
+	(integralmente ou em parte), em qualquer forma (código-fonte, binário, patches, forks, espelhos);
+- Remover, ocultar ou alterar avisos de direitos autorais, marcas, atribuições ou avisos legais.
+
+3) Contribuições via GitHub
+Você pode realizar alterações localmente APENAS com o objetivo de propor melhorias ao projeto
+através de Pull Requests neste repositório oficial.
+
+Ao enviar uma contribuição (Pull Request, patch, commit, issue com código, etc.), você concede
+ao(s) mantenedor(es) do projeto uma licença irrevogável, mundial, perpétua, gratuita e sublicenciável
+para usar, modificar, mesclar, publicar e distribuir sua contribuição como parte do projeto,
+inclusive sob esta licença (ou outra licença que o projeto venha a adotar).
+
+4) Titularidade
+O software é licenciado, não vendido. Todos os direitos não concedidos expressamente nesta licença
+são reservados aos detentores dos direitos autorais.
+
+5) Rescisão
+O descumprimento de qualquer termo desta licença encerra automaticamente seus direitos de uso.
+
+6) Isenção de garantias e limitação de responsabilidade
+O SOFTWARE É FORNECIDO "NO ESTADO EM QUE SE ENCONTRA" ("AS IS"), SEM GARANTIAS DE QUALQUER TIPO,
+EXPRESSAS OU IMPLÍCITAS, INCLUINDO, SEM LIMITAÇÃO, GARANTIAS DE COMERCIALIZAÇÃO, ADEQUAÇÃO A UM
+PROPÓSITO ESPECÍFICO E NÃO VIOLAÇÃO.
+
+EM NENHUMA HIPÓTESE OS AUTORES, CONTRIBUIDORES OU DETENTORES DOS DIREITOS AUTORAIS SERÃO
+RESPONSÁVEIS POR QUAISQUER DANOS, PERDAS OU RESPONSABILIDADES DECORRENTES DO USO OU DA
+IMPOSSIBILIDADE DE USO DO SOFTWARE.
